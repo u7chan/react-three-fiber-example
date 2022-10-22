@@ -1,6 +1,17 @@
 # react-three-fiber-example
 
-## How to setup
+<img src="./demo.gif" width="300" />
+
+## How to run the example.
+
+```sh
+% yarn install
+% yarn dev
+
+➜  Local:   http://localhost:5173/
+```
+
+## How to set up the initial construction.
 
 1. Create vite
 
@@ -26,3 +37,5 @@
    % yarn add three @react-three/fiber
    % yarn add --dev @types/three
    ```
+
+1. Edit App.tsx
