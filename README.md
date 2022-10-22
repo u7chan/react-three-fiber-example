@@ -1,5 +1,7 @@
 # react-three-fiber-example
 
+see: https://github.com/pmndrs/react-three-fiber
+
 <img src="./demo.gif" width="300" />
 
 ## How to run the example.
