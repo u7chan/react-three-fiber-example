@@ -1,15 +1,19 @@
 import { FC } from 'react';
+import { Scene } from './Scene';
 import { Canvas } from '@react-three/fiber';
-import { Box } from './Box';
 
 const App: FC = () => {
   return (
-    <Canvas>
-      <ambientLight />
-      <pointLight position={[10, 10, 10]} />
-      <Box position={[-1.2, 0, 0]} />
-      <Box position={[1.2, 0, 0]} />
-    </Canvas>
+    <>
+      <div style={{ position: 'relative', width: 300, height: 300 }}>
+        <Canvas>
+          <color attach="background" args={['#87dfe9']} />
+          <gridHelper />
+          <Scene />
+        </Canvas>
+      </div>
+      <div>react-three-fiber-example</div>
+    </>
   );
 };
 
