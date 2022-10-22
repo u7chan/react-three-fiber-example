@@ -1,9 +1,9 @@
 import { FC, useRef, useState } from 'react';
-import * as THREE from 'three';
+import { Mesh } from 'three';
 import { useFrame, ThreeElements } from '@react-three/fiber';
 
 export const Box: FC<ThreeElements['mesh']> = (props) => {
-  const ref = useRef<THREE.Mesh>(null!);
+  const ref = useRef<Mesh>(null!);
   const [hovered, hover] = useState(false);
   const [clicked, click] = useState(false);
   useFrame(() => (ref.current.rotation.x += 0.01));
